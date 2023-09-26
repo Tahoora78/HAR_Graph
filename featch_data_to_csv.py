@@ -12,9 +12,7 @@ def convert_mhealth_data_to_csv():
         df1 = df1.rename(columns={
             1: "Activity"
         })
-        # df1['subject'] = 'subject'+str(i)
         df = pd.concat([df, df1])
-
 
     # loop to combine all data
     for i in [1, 5, 6, 8, 9]:
